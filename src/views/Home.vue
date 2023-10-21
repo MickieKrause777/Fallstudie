@@ -41,7 +41,7 @@
   </div>
 </div>
 
-<section class="pt-4 pb-3 text-light border-top border-bottom border-3 mt-5" style="background-color: rgb(177, 99, 99);">
+<section class="pt-4 pb-3 text-light border-top border-bottom border-3 mb-5" style="background-color: rgb(177, 99, 99);">
   <div class="container-fluid mx-auto">
     <div class="text-start">
       <h5 class="fw-bold">So einfach geben Sie eine Spende ab:</h5>
@@ -73,7 +73,7 @@
 </section>
 
 <section class="my-5" id="Krisengebiet">
-  <div class="text-light text-start border border-3" style="background-color: rgb(177, 99, 99);">
+  <div class="text-light text-start border border-3 pb-5" style="background-color: rgb(177, 99, 99);">
     <div class="py-3 text-center">
       <h3 class="fw-bold">Beispiele aktueller Krisengebiete:</h3>
     </div>
@@ -83,23 +83,23 @@
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
-  <div class="carousel-inner">
+  <div class="carousel-inner border-top border-bottom">
     <div class="carousel-item active" data-bs-interval="10000">
-      <img src="https://www.rescue.org/sites/default/files/styles/landscape_4x3_1024px_wide/public/2022-12/20221018%20Ukraine%20DZAlhindawi%20Dnipro%20legal-03258-Edited-1200x800-5b2df79.jpg?itok=0rEeZ8ib" class="d-block w-100" alt="..." style="height: 480px;">
+      <img src="https://www.rescue.org/sites/default/files/styles/landscape_4x3_1024px_wide/public/2022-12/20221018%20Ukraine%20DZAlhindawi%20Dnipro%20legal-03258-Edited-1200x800-5b2df79.jpg?itok=0rEeZ8ib" class="d-block w-100 img" alt="...">
       <div class="carousel-caption text-light">
         <h2>Ukraine</h2>
         <p>Krieg führt zur größten Vertreibungskrise der Welt</p>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="https://media.unsertirol24.com/uploads/2019/11/75270011451592026_BLD_Online.jpg" class="d-block w-100" alt="..." style="height: 480px;">
+      <img src="https://media.unsertirol24.com/uploads/2019/11/75270011451592026_BLD_Online.jpg" class="d-block w-100 img" alt="...">
       <div class="carousel-caption text-light">
         <h2>Irak</h2>
         <p>Bandengewalt und Klimawandel sorgen für Chaos</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="https://www.rescue.org/sites/default/files/styles/landscape_4x3_1024px_wide/public/2022-12/20210918%20NW%20Syria%20Swasan%201205-1200x800-5b2df79.jpg?itok=o0j_KcS_" class="d-block w-100" alt="..." style="height: 480px;">
+      <img src="https://www.rescue.org/sites/default/files/styles/landscape_4x3_1024px_wide/public/2022-12/20210918%20NW%20Syria%20Swasan%201205-1200x800-5b2df79.jpg?itok=o0j_KcS_" class="d-block w-100 img" alt="...">
       <div class="carousel-caption text-light">
         <h2>Syrien</h2>
         <p>Jahrelanger Krieg löst eine Wirtschaftskrise aus</p>
@@ -120,9 +120,9 @@
 
 <section id="about" class="p-5">
       <div class="container">
-        <h1 class="text-center fw-bold" style="color: rgb(177, 99, 99)">Über uns</h1>
+        <h1 class="text-center fw-bold text-light">Über uns</h1>
         <p class="lead text-center text-white mb-5">
-          Wir sind ein kleines ehrenamtliches Team, welches versucht die Krisenregionen dieser Welt zu unterstützen.
+          Wir sind ein kleines ehrenamtliches Team, welches versucht die <span style="color: rgb(0, 0, 0);">Krisenregionen</span> dieser Welt zu unterstützen.
         </p>
         <div class="row g-4">
           <div class="col-lg-6">
@@ -133,7 +133,7 @@
                   class="rounded-circle mb-3"
                   alt=""
                 />
-                <h3 class="card-title mb-3">Fabian Gräml</h3>
+                <h3 class="card-title mb-3" style="color: rgb(177, 99, 99);">Fabian Gräml</h3>
               </div>
             </div>
           </div>
@@ -146,7 +146,7 @@
                   class="rounded-circle mb-3"
                   alt=""
                 />
-                <h3 class="card-title mb-3">Jane Doe</h3>
+                <h3 class="card-title mb-3" style="color: rgb(177, 99, 99);">Jane Doe</h3>
               </div>
             </div>
           </div>
@@ -192,3 +192,17 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.img{
+  @media only screen and (min-width: 1150px) {
+    height: 700px;
+  }
+  @media only screen and (max-width: 1150px) {
+    height: 480px;
+  }
+  @media only screen and (max-width: 800px) {
+    height: 300px;
+  }
+}
+</style>

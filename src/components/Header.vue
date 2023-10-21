@@ -9,11 +9,11 @@
                     </div>  
               </router-link>
 
-              <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" v-if="!inGS">
                 <span class="navbar-toggler-icon"></span>
               </button>
 
-              <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+              <div class="collapse navbar-collapse" id="navbarToggleExternalContent" v-if="!inGS">
                 <ul class="navbar-nav ms-auto m-1 gap-2 align-items-center">
                   <li class="nav-item">
                     <router-link to="/" class="nav-link text-center fw-bold p-3 border rounded-pill text-light bg-primary">Home</router-link>
@@ -33,3 +33,13 @@
           </nav>
     </div>  
 </template>
+
+<script>
+export default{
+  computed:{
+      inGS(){
+        return this.$route.name === "SpendeInFiliale"
+      }
+    }
+}
+</script>
