@@ -1,9 +1,9 @@
 <template>
 
-<main>
+<main class="pt-5">
 <div class="bg-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');">
 
-<section class="d-flex align-items-center text-light p-4 text-center text-sm-start" style="position: relative;">
+<section class="d-flex align-items-center text-light p-5 text-center text-sm-start" style="position: relative;">
   <div class="container mt-5">
     <div class="d-md-flex align-items-center">
       <div class="mx-3">

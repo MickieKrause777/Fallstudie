@@ -1,6 +1,8 @@
 
 <template>
-    <KleiderspendenFormular></KleiderspendenFormular>
+    <div style="padding-top: 114px;">
+        <KleiderspendenFormular></KleiderspendenFormular>
+    </div>
 </template>
 
 <script>
