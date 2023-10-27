@@ -54,7 +54,7 @@
           <p class="small fw-light">Kurze Erfassung der Kontaktdaten und Auswahl der Kleidung</p>
         </div>
       </div>
-      <div class="col--md-4 container d-flex align-items-center justify-content-md-center m-1">
+      <div class="col-md-4 container d-flex align-items-center justify-content-md-center m-1">
         <img src="https://cdn0.iconfinder.com/data/icons/let-s-promote-peace-line/32/line-Peace_t-512.png" class="d-none d-sm-block" style="width: 35%; height: auto,">
         <div class="m-md-3">
           <h6>2. Krisengebiet auswählen</h6>
@@ -85,7 +85,8 @@
   </div>
   <div class="carousel-inner border-top border-bottom">
     <div class="carousel-item active" data-bs-interval="10000">
-      <img src="https://www.rescue.org/sites/default/files/styles/landscape_4x3_1024px_wide/public/2022-12/20221018%20Ukraine%20DZAlhindawi%20Dnipro%20legal-03258-Edited-1200x800-5b2df79.jpg?itok=0rEeZ8ib" class="d-block w-100 img" alt="...">
+      <img src="https://www.rescue.org/sites/default/files/styles/landscape_4x3_1024px_wide/public/2022-12/20221018%20Ukraine%20DZAlhindawi%20Dnipro%20legal-03258-Edited-1200x800-5b2df79.jpg?itok=0rEeZ8ib"
+      class="d-block w-100 img" alt="...">
       <div class="carousel-caption text-light">
         <h2>Ukraine</h2>
         <p>Krieg führt zur größten Vertreibungskrise der Welt</p>
@@ -99,7 +100,8 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="https://www.rescue.org/sites/default/files/styles/landscape_4x3_1024px_wide/public/2022-12/20210918%20NW%20Syria%20Swasan%201205-1200x800-5b2df79.jpg?itok=o0j_KcS_" class="d-block w-100 img" alt="...">
+      <img src="https://www.rescue.org/sites/default/files/styles/landscape_4x3_1024px_wide/public/2022-12/20210918%20NW%20Syria%20Swasan%201205-1200x800-5b2df79.jpg?itok=o0j_KcS_"
+      class="d-block w-100 img" alt="...">
       <div class="carousel-caption text-light">
         <h2>Syrien</h2>
         <p>Jahrelanger Krieg löst eine Wirtschaftskrise aus</p>
