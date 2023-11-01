@@ -70,15 +70,15 @@
             </div>
             <div class="col-sm-5 my-1">
               <label for="andererOrt" class="form-label">Ort</label>
-              <input id="andererOrt" type="text" class="form-control">
+              <input id="andererOrt" type="text" class="form-control" v-model="andererOrt">
             </div>
             <div class="col-sm-9 my-1">
               <label for="andereStraße" class="form-label">Straße</label>
-              <input id="andereStraße" type="text" class="form-control">
+              <input id="andereStraße" type="text" class="form-control" v-model="andereStraße">
             </div>
             <div class="col-sm-3 my-1">
               <label for="andereHausnummer" class="form-label">Nr.</label>
-              <input id="andereHausnummer" type="text" class="form-control">
+              <input id="andereHausnummer" type="text" class="form-control" v-model="andereHausnummer">
             </div>
           </div> 
         </div> 
@@ -180,6 +180,9 @@ export default {
         Email:"",
         gleicheAdresse: false,
         anderePLZ: "",
+        andererOrt: "",
+        andereStraße: "",
+        andereHausnummer: "",
         GeschäftsstellePLZ: "92224",
         Kleidung: [],
         Krisengebiet: "",
@@ -223,14 +226,28 @@ export default {
           this.ungleichePLZ = "Abholadresse muss in der Nähe von der Geschäftsstelle sein"
           return
           }
+          const newSpende = {
+          Vorname: this.Vorname,
+          Nachname: this.Nachname,
+          Land: this.Land,
+          PLZ: this.anderePLZ,
+          Ort: this.andererOrt,
+          Straße: this.andereStraße,
+          Hausnummer: this.andereHausnummer,
+          Telefonnummer: this.Telefonnummer,
+          Email: this.Email,
+          Kleidung: this.Kleidung,
+          Krisengebiet: this.Krisengebiet,
+          Bemerkungen: this.Bemerkungen,
+          }
+          this.$emit("bestätige-Spende", newSpende)
         }
         if(this.anderePLZ == ""){
           if(this.GeschäftsstellePLZ.substring(0, 2) !== this.PLZ.substring(0, 2)) {
           this.ungleichePLZ = "Abholadresse muss in der Nähe von der Geschäftsstelle sein"
           return
           }
-        }
-        const newSpende = {
+          const newSpende = {
           Vorname: this.Vorname,
           Nachname: this.Nachname,
           Land: this.Land,
@@ -244,7 +261,8 @@ export default {
           Krisengebiet: this.Krisengebiet,
           Bemerkungen: this.Bemerkungen,
         }
-        this.$emit("bestätige-Spende", newSpende)
+          this.$emit("bestätige-Spende", newSpende)
+      }
      },
     },
     computed:{
