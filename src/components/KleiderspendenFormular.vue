@@ -149,7 +149,7 @@
         <hr class="my-3">
 
         <div class="form-check">
-            <input type="checkbox" class="form-check-input" value="Mützen" required>
+            <input type="checkbox" class="form-check-input" required>
             <label>Ich akzeptiere die Nutzungsbedingungen</label>
         </div>
         
