@@ -243,9 +243,11 @@ export default {
           this.$emit("bestätige-Spende", newSpende)
         }
         if(this.anderePLZ == ""){
+          if(this.zeigeAbholung == true){
           if(this.GeschäftsstellePLZ.substring(0, 2) !== this.PLZ.substring(0, 2)) {
           this.ungleichePLZ = "Abholadresse muss in der Nähe von der Geschäftsstelle sein"
           return
+          }
           }
           const newSpende = {
           Vorname: this.Vorname,
