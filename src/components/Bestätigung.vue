@@ -14,6 +14,7 @@
         <hr>
         <div>
           <p>Name: {{ Spende.Vorname }} {{ Spende.Nachname }}</p>
+          <p>Adresse: {{ Spende.Straße }} {{ Spende.Hausnummer }}, {{ Spende.PLZ }} {{ Spende.Ort }}</p>
           <p>Kontaktdaten: {{ Spende.Telefonnummer }}, {{ Spende.Email }}</p>
           <p>Kleidungsstücke: <li v-for="Teil in Spende.Kleidung">{{ Teil }}</li></p>
           <p>Krisengebiet: {{ Spende.Krisengebiet }}</p>
